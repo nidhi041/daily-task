@@ -2,6 +2,12 @@
 
 A small Express API for a local marketplace. It stores data in memory, so a restart clears listings and orders.
 
+## Food delivery dashboard
+
+The React dashboard is a standalone UI with sample food-delivery orders. Run it with `npm install` and `npm run dev`, then open the local URL printed by Vite. Verify the client with `npm run build`; run the existing API with `npm start` and its tests with `npm test`.
+
+The dashboard owns order data, loading/error state, filters, and status/ETA updates. Reusable order cards, status badges, and summary cards receive data and callbacks as props. Its sample data service supports the `?demo=empty` and `?demo=error` query parameters to preview empty and error states; remove the parameter to return to the normal sample orders. Status changes and five-minute ETA adjustments are local demo interactions, not persisted to the API.
+
 ## Run and verify
 
 ```powershell
